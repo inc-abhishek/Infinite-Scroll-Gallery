@@ -33,7 +33,7 @@ function App() {
     setLoading(false);
   }, [page, hasMore, loading]);
 
-  // Infinite scroll handler
+  
   const handleScroll = useCallback(() => {
     
     if (
@@ -57,7 +57,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 >Geekster's Infinite Scroll Gallery By Abhishek Pal</h1>
+     <h1>
+      Geekster's Infinite Scroll Gallery
+      <span className="signature"> Abhishek Pal : FS20</span>
+    </h1>
       <div className="image-grid">
         {images.map((image) => (
           <div key={image.id} className="image-item">
